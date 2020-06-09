@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Quarkus" url="file://$PROJECT_DIR$/extensions/extension-fault-injector/deployment" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/extensions/extension-fault-injector/runtime" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/super-heroes/rest-hero" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/super-heroes/rest-villain" />
     <file type="Quarkus" url="file://$PROJECT_DIR$/super-heroes/ui-super-heroes" />
   </component>
