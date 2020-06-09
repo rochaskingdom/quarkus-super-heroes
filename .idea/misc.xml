@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/extensions/extension-fault-injector/deployment" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/extensions/extension-fault-injector/runtime" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/super-heroes/rest-villain" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/super-heroes/ui-super-heroes" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Amazon Corretto 11" project-jdk-type="JavaSDK" />
+</project>

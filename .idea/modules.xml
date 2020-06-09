@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/extensions/extension-fault-injector/runtime/extension-fault-injector.iml" filepath="$PROJECT_DIR$/extensions/extension-fault-injector/runtime/extension-fault-injector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/extension-fault-injector/deployment/extension-fault-injector-deployment.iml" filepath="$PROJECT_DIR$/extensions/extension-fault-injector/deployment/extension-fault-injector-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extensions/extension-fault-injector/extension-fault-injector-parent.iml" filepath="$PROJECT_DIR$/extensions/extension-fault-injector/extension-fault-injector-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villain/rest-villain.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villain/rest-villain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-parent-root.iml" filepath="$PROJECT_DIR$/super-parent-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/ui-super-heroes/ui-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/ui-super-heroes/ui-super-heroes.iml" />
+    </modules>
+  </component>
+</project>

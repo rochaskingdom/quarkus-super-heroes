@@ -1,0 +1,4 @@
+META-INF\quarkus-build-steps.list
+META-INF\quarkus-javadoc.properties
+io\quarkus\workshop\superheroes\quack\deployment\QuackProcessor$$accessor.class
+io\quarkus\workshop\superheroes\quack\deployment\QuackProcessor.class

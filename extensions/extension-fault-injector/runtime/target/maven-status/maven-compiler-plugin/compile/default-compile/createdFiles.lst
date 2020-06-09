@@ -1,0 +1,7 @@
+META-INF\quarkus-javadoc.properties
+io\quarkus\workshop\superheroes\quack\runtime\FaultInjectorRecorder.class
+META-INF\quarkus-config-roots.list
+io\quarkus\workshop\superheroes\quack\runtime\QuackConfig.class
+io\quarkus\workshop\superheroes\quack\runtime\FaultInjector.class
+io\quarkus\workshop\superheroes\quack\runtime\FaultInjectorRecorder$$accessor.class
+io\quarkus\workshop\superheroes\quack\runtime\QuackConfig$$accessor.class
