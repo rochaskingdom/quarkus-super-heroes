@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/extensions/extension-fault-injector/deployment/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extensions/extension-fault-injector/runtime/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/super-heroes/load-super-heroes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-heroes/rest-fight/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/super-heroes/rest-fight/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/super-heroes/rest-hero/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/super-heroes/rest-hero/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/super-heroes/rest-hero/src/main/resources/application.properties" charset="UTF-8" />

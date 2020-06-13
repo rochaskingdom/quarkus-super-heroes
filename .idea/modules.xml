@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/extensions/extension-fault-injector/deployment/extension-fault-injector-deployment.iml" filepath="$PROJECT_DIR$/extensions/extension-fault-injector/deployment/extension-fault-injector-deployment.iml" />
       <module fileurl="file://$PROJECT_DIR$/extensions/extension-fault-injector/extension-fault-injector-parent.iml" filepath="$PROJECT_DIR$/extensions/extension-fault-injector/extension-fault-injector-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-fight/rest-fight.iml" filepath="$PROJECT_DIR$/super-heroes/rest-fight/rest-fight.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-hero/rest-hero.iml" filepath="$PROJECT_DIR$/super-heroes/rest-hero/rest-hero.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villain/rest-villain.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villain/rest-villain.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-parent-root.iml" filepath="$PROJECT_DIR$/super-parent-root.iml" />

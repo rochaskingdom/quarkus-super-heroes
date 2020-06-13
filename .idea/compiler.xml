@@ -9,6 +9,7 @@
         <module name="rest-hero" />
         <module name="rest-villain" />
         <module name="load-super-heroes" />
+        <module name="rest-fight" />
         <module name="ui-super-heroes" />
       </profile>
       <profile name="Annotation profile for Quarkus Workshop :: Super-Heroes - R00T" enabled="true">
@@ -41,6 +42,7 @@
       <module name="extension-fault-injector-deployment" target="1.8" />
       <module name="extension-fault-injector-parent" target="1.8" />
       <module name="load-super-heroes" target="1.8" />
+      <module name="rest-fight" target="1.8" />
       <module name="rest-hero" target="1.8" />
       <module name="rest-villain" target="1.8" />
       <module name="super-parent-root" target="1.5" />
