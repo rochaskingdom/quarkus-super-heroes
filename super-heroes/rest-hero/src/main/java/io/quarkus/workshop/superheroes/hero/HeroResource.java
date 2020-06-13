@@ -1,5 +1,6 @@
 package io.quarkus.workshop.superheroes.hero;
 
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
@@ -16,6 +17,7 @@ import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
 
 @Path("/api/heroes")
 @Produces(APPLICATION_JSON)
+@Tag(name = "Heroes")
 public class HeroResource {
 
     private static final Logger LOGGER = Logger.getLogger(HeroResource.class);
@@ -40,8 +42,7 @@ public class HeroResource {
 
     @GET
     @Path("/{id}")
-    public Response getHero(
-        @PathParam("id") Long id) {
+    public Response getHero(@PathParam("id") Long id) {
         Hero hero = service.findHeroById(id);
         if (hero != null) {
             LOGGER.debug("Found hero " + hero);
@@ -53,8 +54,7 @@ public class HeroResource {
     }
 
     @POST
-    public Response createHero(
-        @Valid Hero hero, @Context UriInfo uriInfo) {
+    public Response createHero(@Valid Hero hero, @Context UriInfo uriInfo) {
         hero = service.persistHero(hero);
         UriBuilder builder = uriInfo.getAbsolutePathBuilder().path(Long.toString(hero.id));
         LOGGER.debug("New hero created with URI " + builder.build().toString());
@@ -62,8 +62,7 @@ public class HeroResource {
     }
 
     @PUT
-    public Response updateHero(
-        @Valid Hero hero) {
+    public Response updateHero(@Valid Hero hero) {
         hero = service.updateHero(hero);
         LOGGER.debug("Hero updated with new valued " + hero);
         return Response.ok(hero).build();
@@ -71,8 +70,7 @@ public class HeroResource {
 
     @DELETE
     @Path("/{id}")
-    public Response deleteHero(
-        @PathParam("id") Long id) {
+    public Response deleteHero(@PathParam("id") Long id) {
         service.deleteHero(id);
         LOGGER.debug("Hero deleted with " + id);
         return Response.noContent().build();
