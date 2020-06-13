@@ -10,12 +10,12 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.util.List;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
+import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
 
 @Path("/api/fights")
 @Produces(APPLICATION_JSON)
@@ -62,7 +62,8 @@ public class FightResource {
     }
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(TEXT_PLAIN)
+    @Path("/hello")
     public String hello() {
         return "hello";
     }
