@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 public class Villain {
 
     @NotNull
-    public String nome;
+    public String name;
     @NotNull
     public int level;
     @NotNull

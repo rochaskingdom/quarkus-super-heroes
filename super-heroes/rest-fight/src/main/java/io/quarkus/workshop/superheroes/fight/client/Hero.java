@@ -12,6 +12,6 @@ public class Hero {
     @NotNull
     public int level;
     @NotNull
-    public String pictures;
+    public String picture;
     public String powers;
 }

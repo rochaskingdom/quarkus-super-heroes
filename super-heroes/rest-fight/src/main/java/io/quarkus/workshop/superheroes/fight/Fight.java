@@ -24,6 +24,8 @@ public class Fight extends PanacheEntity {
     @NotNull
     public int loserLevel;
     @NotNull
+    public String loserPicture;
+    @NotNull
     public String winnerTeam;
     @NotNull
     public String loserTeam;
@@ -37,8 +39,10 @@ public class Fight extends PanacheEntity {
             ", winnerPicture='" + winnerPicture + '\'' +
             ", loserName='" + loserName + '\'' +
             ", loserLevel=" + loserLevel +
+            ", loserPicture='" + loserPicture + '\'' +
             ", winnerTeam='" + winnerTeam + '\'' +
             ", loserTeam='" + loserTeam + '\'' +
+            ", id=" + id +
             '}';
     }
 }
