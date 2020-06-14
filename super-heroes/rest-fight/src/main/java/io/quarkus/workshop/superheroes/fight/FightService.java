@@ -1,8 +1,14 @@
 package io.quarkus.workshop.superheroes.fight;
 
+import io.quarkus.workshop.superheroes.fight.client.Hero;
+import io.quarkus.workshop.superheroes.fight.client.HeroService;
+import io.quarkus.workshop.superheroes.fight.client.Villain;
+import io.quarkus.workshop.superheroes.fight.client.VillainService;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 import javax.transaction.Transactional;
 import java.time.Instant;
 import java.util.List;
@@ -14,6 +20,14 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @ApplicationScoped
 @Transactional(SUPPORTS)
 public class FightService {
+
+    @Inject
+    @RestClient
+    HeroService heroService;
+
+    @Inject
+    @RestClient
+    VillainService villainService;
 
     private static final Logger LOGGER = Logger.getLogger(FightService.class);
 
@@ -48,7 +62,20 @@ public class FightService {
     }
 
     public Fighters findRandomFighters() {
-        return null;
+        Hero hero = findRandomHero();
+        Villain villain = findRandomVillain();
+        Fighters fighters = new Fighters();
+        fighters.hero = hero;
+        fighters.villain = villain;
+        return fighters;
+    }
+
+    Hero findRandomHero() {
+        return heroService.findRandomHero();
+    }
+
+    Villain findRandomVillain() {
+        return villainService.findRandomVillain();
     }
 
     private Fight heroWon(Fighters fighters) {
