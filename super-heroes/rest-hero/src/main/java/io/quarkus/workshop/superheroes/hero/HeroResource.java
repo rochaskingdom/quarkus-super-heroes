@@ -1,5 +1,8 @@
 package io.quarkus.workshop.superheroes.hero;
 
+import org.eclipse.microprofile.metrics.MetricUnits;
+import org.eclipse.microprofile.metrics.annotation.Counted;
+import org.eclipse.microprofile.metrics.annotation.Timed;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.logging.Logger;
 
@@ -25,6 +28,9 @@ public class HeroResource {
     @Inject
     HeroService service;
 
+    @Counted(name = "countGetRandomHero", description = "Counts how many times the getRandomHero method has been invoked")
+    @Timed(name = "timeGetRandomHero", description = "Times how long it takes to invoke the getRandomHero method",
+        unit = MetricUnits.MILLISECONDS)
     @GET
     @Path("/random")
     public Response getRandomHero() {
